@@ -1,0 +1,237 @@
+/* Google font styles
+font-family: 'Anton', sans-serif;
+font-family: 'Corben', cursive;
+font-family: 'Roboto', sans-serif;
+
+background-color: #181611;
+background-color: #333;
+background-color: #272a2e;
+color: #ffe;
+*/
+
+/* ******************** BODY DIVS******************** */
+html {
+    font-size: 16px;
+    height: 100%;
+}
+
+body {
+    padding: 5rem 1rem; /* prevents main content fr bumping right underneath "fixed" navbar*/
+    /* color: #ffffd6; */
+    color: #FFFCD6;
+}
+
+/* ******************** FOOTER ******************** */
+.container-jgfooter {
+    text-align: center;
+}
+
+.col-jg1,
+.col-jg2,
+.col-jg3 {
+    border-top: 5px dashed #FFFCD6;
+    font-size: .75rem;
+}
+
+.col-jg1,
+.col-jg2 {
+    border-right: 5px dashed #FFFCD6;
+}
+
+/* ******************** SPECIAL PAGE STYLES ******************** */
+/* INDEX colors */
+.main,
+.row-jgMain,
+.navbar {
+    background-color: #1B1900;
+}
+
+.main a:hover {
+    color: #1B1900;
+}
+
+/* PORTFOLIO background colors */
+.portfolio,
+.nav-jgPortfolio,
+.row-jgPortfolio {
+    background-color: #4A9602;
+}
+
+.portfolio a:hover { 
+    color: #4A9602;
+}
+
+.portfolioTag {
+    border-top: dashed 8px #FFFCD6;
+    border-bottom: dashed 8px #FFFCD6;
+    padding: 5px;
+}
+
+.card {
+    margin-bottom: 25px;
+}
+
+/* CONTACT background colors */
+.contact,
+.nav-jgContact,
+.row-jgContact {
+    background-color: #FF7300;
+}
+
+.contact a:hover { 
+    color: #FF7300;
+}
+
+.form-control-jg {
+    background-color: #FFFCD6;
+}
+
+.btn-jg {
+    background-color: #FFFCD6;
+    color: #FF7300;
+    margin-top: 5px;
+    padding: 8px 6px;
+}
+
+.form-group-jg {
+    padding-top: 50px;
+}
+
+/* ******************** NAVIGATION ******************** */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; 
+    /* z-index prevented images scrolling over nav */
+}
+
+a:hover, a:active {
+    background-color:#FFFCD6;
+}
+
+.navbar-nav {
+    font-weight: bold;
+}
+
+a {
+    color: #FFFCD6;
+}
+
+.container-message-jg {
+    padding: 50px;
+}
+
+/* ******************** TEXT ******************** */
+
+.navbar-brand-jg,
+h1,
+.mainTagLine,
+footer,
+.btn-jg,
+.messegeMe {
+    font-family: 'Corben', cursive, 'Anton', sans-serif;
+}
+
+.mainTagLine {
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.messegeMe {
+    font-size: 4rem;
+}
+
+h2, p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+strong {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.container-jgPortfolio {
+    margin-bottom: 50px;
+}
+
+/* ******************** IMAGES ******************** */
+.image-jgMain {
+    width: 400px;
+}
+
+.image-jgPortfolio {
+    width: 600px;
+}
+
+.image-jgContact {
+    width: 500px;
+    padding-top: 50px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.img-thumbnail-jg {
+    background-color: #FFFCD6;
+}
+
+
+/* ******************** MEDIA QUERIES ******************** */
+
+@media (max-width: 600px) {
+    .navbar-brand-jg {
+        font-size: .75rem;
+    } 
+
+    .mainTagLine,
+    .messageMe {
+        font-size: 2rem;
+    }
+
+    /* h2 {
+        font-size: 1.5rem;
+    } */
+    
+    .stuff-jg,
+    .img {
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    .image-jgMain,
+    .image-jgContact {
+        width: 250px;
+        display: block;
+    }
+
+    .messegeMe {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (min-width: 768px) {}
+@media (min-width: 992px) {
+    .container-jgMain,
+    .container-jgContact {
+        padding-top: 2rem;
+    }
+
+    .image-jgContact {
+        width: 500px;
+    }
+
+}
